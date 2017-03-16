@@ -1,0 +1,192 @@
+header {
+    background: #3784de;
+    color: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+    padding: 0px;
+    font: 95% Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    height: 55px;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(55, 132, 222);
+    background: rgba(255, 255, 255, 0.66);
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed
+}
+
+td {
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+th {
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 5px;
+    background-color: rgb(55, 132, 222);
+    color: white;
+}
+
+.error {
+    background-color: #b44040;
+    border: 3px solid #862f2f;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
+
+.info {
+    background-color: #FDFDEF;
+    border: 3px solid #EBE9C5;
+    border-radius: 4px;
+    color: gray;
+    padding: 10px;
+}
+
+.success {
+    background-color: #8cff80;
+    border: 3px solid #3dcf2d;
+    border-radius: 4px;
+    color: black;
+    padding: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    background-image: url("https://www.crazyeasy.tk/img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100%;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    font: 75% Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+footer a:link {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+}
+
+footer a:active {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+}
+
+main {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+main h1 {
+    background: #3784de;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+
+main a:link,
+main a:visited {
+    font: 95% Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #3784de;
+    !important
+}
+
+main input[type="text"],
+main input[type="date"],
+main input[type="datetime"],
+main input[type="email"],
+main input[type="number"],
+main input[type="search"],
+main input[type="time"],
+main input[type="url"],
+main input[type="password"],
+main textarea,
+main select {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+main input[type="text"]:focus,
+main input[type="date"]:focus,
+main input[type="datetime"]:focus,
+main input[type="email"]:focus,
+main input[type="number"]:focus,
+main input[type="search"]:focus,
+main input[type="time"]:focus,
+main input[type="url"]:focus,
+main input[type="password"]:focus,
+main textarea:focus,
+main select:focus {
+    box-shadow: 0 0 5px #3784de;
+    padding: 3%;
+    border: 1px solid #3784de;
+}
+
+main input[type="submit"],
+main input[type="button"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #3784de;
+    border-bottom: 2px solid #3376c4;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+
+main input[type="submit"]:hover,
+main input[type="button"]:hover {
+    background: #3376c4;
+}

@@ -1,1 +1,7 @@
+########################################################
+# If you are not using the main path, change it below! # 
+########################################################
+
 ErrorDocument 404 /GitHub/one-page/index.php
+ErrorDocument 403 /GitHub/one-page/index.php?p=403
+ErrorDocument 500 /GitHub/one-page/index.php?p=500

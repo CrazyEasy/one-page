@@ -20,6 +20,15 @@
     # Deaktiviert Fehlermeldungen:
     ini_set('display_errors', 0);
     
+    # Bekomme Custom URL
+    $get_page = $_GET["p"];
+    
+    # Bei Custom URL umleiten
+    if ($get_page != null) {
+        $redirect_to = "$main_domain$experimental_path/$get_page";
+        header ("Location: $redirect_to");
+    }
+    
     # Bekomme URL
     $url = str_replace($experimental_path, "", $_SERVER['REQUEST_URI']);
     

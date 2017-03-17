@@ -26,7 +26,9 @@
     # Bei Custom URL umleiten
     if ($get_page != null) {
         $redirect_to = "$main_domain$experimental_path/$get_page";
+        echo $redirect_to;
         header ("Location: $redirect_to");
+        exit;
     }
     
     # Bekomme URL
@@ -37,6 +39,12 @@
         $url = str_split($url,1); 
         array_shift($url); 
         $url = implode("",$url);       
+    }
+    
+    # Bei Startseite auf eigentliche Startseite
+    if ($url == "index.php" || $url == "index" || $url == "startpage") {
+        header ("Location: ".$main_domain.$experimental_path);
+        exit;
     }
     
     # $url -> Kleinbuchstaben
@@ -66,12 +74,10 @@
     </head>
     
     <body>
-        <header>
             <?php
             # Eigene Header-Datei
             include 'header.php';    
             ?>
-        </header>
         
         <?php
         # Startseite?
@@ -115,26 +121,29 @@
             }
             
             # PHP?
-            if (file_exists("pages/$url.php")) {
+            elseif (file_exists("pages/$url.php")) {
                 $path = "pages/$url.php";
                 include $path;
             }
             
             # HTML?
-            if (file_exists("pages/$url.html")) {
+            elseif (file_exists("pages/$url.html")) {
                 $path = "pages/$url.html";
                 include $path;
+            }
+            
+            # 404!
+            else {
+                header ("Location: ".$main_domain.$experimental_path."/404");
             }
             
         }
         ?>
         
-        <footer>
             <?php
             # Eigene Footer-Datei
             include 'footer.php';    
             ?>
-        </footer>
         
     </body>
     

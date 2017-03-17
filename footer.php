@@ -4,5 +4,6 @@
 
 <footer>
     
+    &copy; OnePage
     
 </footer>

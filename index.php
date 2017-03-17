@@ -20,7 +20,7 @@
     # Deaktiviert Fehlermeldungen:
     ini_set('display_errors', 0);
     
-    # Bekomme Custom URL
+    # Get Custom URL
     $get_page = $_GET["p"];
     
     # Bei Custom URL umleiten

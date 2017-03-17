@@ -6,4 +6,7 @@ Making Websites with HTML is out! Now you can simply create your content with Ma
 
 ### Example:
 - Goto the folder `pages`.
-- Create a new file and name it `Example.md`.
+- Create a new file and name it `mypage.md`.
+- Put your content in there.
+- Save
+- Done, your page is available on `example.com/mypage`!

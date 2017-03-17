@@ -6,10 +6,10 @@
 <html>
     
     <?php
-    # Config-Einbindung:
+    # Include Config
     include 'config.php';
     
-    # Entfernt "/" am Ende
+    # Removes "/" at the End
     if ($main_domain{strlen($main_domain) - 1} == "/") {
         $main_domain = substr($main_domain, 0, -1);      
     }
@@ -17,13 +17,13 @@
         $experimental_path = substr($experimental_path, 0, -1);      
     }
     
-    # Deaktiviert Fehlermeldungen:
+    # Deactivate Errors
     ini_set('display_errors', 0);
     
     # Get Custom URL
     $get_page = $_GET["p"];
     
-    # Bei Custom URL umleiten
+    # Redirect if Custom URL
     if ($get_page != null) {
         $redirect_to = "$main_domain$experimental_path/$get_page";
         echo $redirect_to;
@@ -31,39 +31,39 @@
         exit;
     }
     
-    # Bekomme URL
+    # Get URL
     $url = str_replace($experimental_path, "", $_SERVER['REQUEST_URI']);
     
-    # Entfernt das "/" am Anfang
+    # Removes "/" at the beginning
     if ($url{0} == "/") {
         $url = str_split($url,1); 
         array_shift($url); 
         $url = implode("",$url);       
     }
     
-    # Bei Startseite auf eigentliche Startseite
+    # Alias -> start page
     if ($url == "index.php" || $url == "index" || $url == "startpage") {
         header ("Location: ".$main_domain.$experimental_path);
         exit;
     }
     
-    # $url -> Kleinbuchstaben
+    # $url -> lowercase
     $url = strtolower($url);
     
-    # Definiere $page
+    # define $page (ucfirst)
     $page = ucfirst($url);
     ?>
     
     <head>
         <?php
-        # Eigene Head-Datei
+        # include head
         include 'head.php';
         
-        # Parsedown + Parsedown-Extra (parsedown.org)
+        # parsedown + parsedown-Extra (parsedown.org)
         include 'assets/parsedown.php';
         include 'assets/parsedown-extra.php';
         
-        # Seiten-Titel
+        # page title
         if ($page == null) {
             echo "<title>$page_name</title>";
         } 
@@ -75,12 +75,12 @@
     
     <body>
             <?php
-            # Eigene Header-Datei
+            # include header
             include 'header.php';    
             ?>
         
         <?php
-        # Startseite?
+        # start page?
         if ($url == null) {
             
             # Markdown?
@@ -141,7 +141,7 @@
         ?>
         
             <?php
-            # Eigene Footer-Datei
+            # include footer
             include 'footer.php';    
             ?>
         

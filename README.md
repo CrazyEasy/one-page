@@ -22,7 +22,7 @@ Example ``config.php``:
 
 ```php    
 # Main Domain (No "/" at the End!)
-$main_domain = "http://mypage.com"; 
+$main_domain = "http://mywebsite.com"; 
 
 # <title>-Name
 $page_name = "MyPage";

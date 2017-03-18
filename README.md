@@ -1,5 +1,5 @@
 # ONE-PAGE
-Building a website? Annoyed of changing the menu bar on every single page separately? Just because of one tiny typo? One-Page will help you out: Just focus on the content!
+Building a website? Annoyed about changing the menu bar on every single page separately? Just because of one tiny typo? **One-Page** will help you out and you simply have to focus on the content!
 
 ![](/img/tutorial1.png)
 
@@ -8,14 +8,14 @@ Building a website? Annoyed of changing the menu bar on every single page separa
 ### Installing One-Page
 _See release notes, if you want to upgrade to a newer version!_
 
-1. Goto `https://github.com/CrazyEasy/one-page/releases` and download the latest release.
+1. Go to `https://github.com/CrazyEasy/one-page/releases` and download the latest release.
 2. Put it into your main directory.
 
-### Configurate One-Page
+### Configuration
 Open `config.php`:
 
-- **`$main_domain`**: Just set it to your domain/url!
-- **`$page_name`**: Enter your page-name (One-Page will use it to generate the website-title!)
+- **`$main_domain`**: Just set it onto your domain/url!
+- **`$page_name`**: Enter the name of your page (One-Page will use it to generate the website-title!)
 - **`$experimental_path`**: If you are not using the main directory, add your sub-directory here. [Beta]
 
 Example ``config.php``:
@@ -47,16 +47,17 @@ ErrorDocument 500 /sub-directory/index.php?p=500
 ```
 
 ## Create a new page
-### using MarkDown:
+### using Markdown:
 
-- Goto the `pages/`-folder
-- Create a markdown-file, the file-name will be the URL. (Example: `example-page.md`)<br>**Important:** Only use <u>lowercase</u> letters in the filename!
-- Write your content in the file.
-- Done! You will find your web-page at `example.com/example-page`.
+- Go to the `pages/`-folder
+- Create a Markdown-file, the name of the file will be the URL. (Example: `example-page.md`)<br>
+  **Important:** Only use <u>lowercase</u> letters in the filename!
+- Just write any content you want in the file.
+- Done! You will find your web page at `example.com/example-page`.
 
 ### using HTML / PHP:
-- Goto the `pages/`-folder
-- Create a new file, the file-name will be the URL. (Example: `example-page2.html`)<br>**Important:** Only use <u>lowercase</u> letters in the filename!
+- Go to the `pages/`-folder
+- Create a new file, the name of the file will be the URL. (Example: `example-page2.html`)<br>**Important:** Only use <u>lowercase</u> letters in the filename!
 - Put your content between `<main>`&`</main>`<br>
   **Example:**
  ```html
@@ -65,20 +66,20 @@ ErrorDocument 500 /sub-directory/index.php?p=500
     <!-- More Content-->
   </main>
  ```
-- Done! You will find your web-page at `example.com/example-page2`.
+- Done! You will find your web page at `example.com/example-page2`.
 
-## Change Footer / Header
+## Change footer / header
 Very simple: 
 - open `footer.php` if you want to change your footer,
 - open `header.php` if you want to change your header!
 :)
 
-## Change the Design
+## Change the design
 Simple, again:
 - You will find a folder named `css/`,
-- in there you will find `main.css`.
-- Just change the style how you like ;)
+- In the folder you will find a file named `main.css`.
+- Just change the style how you like!
 
 ---
 
-If you have any questions, feel free to ask!
+If you have any questions, feel free to ask! ;)

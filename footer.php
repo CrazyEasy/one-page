@@ -1,9 +1,9 @@
 <!-- -=-=-=-=-=-=-=-=-=-=-=- -->
-<!-- Build your Footer here! -->
+<!-- Build your footer here! -->
 <!-- -=-=-=-=-=-=-=-=-=-=-=- -->
 
 <footer>
     
-    &copy; OnePage
+    &copy; OnePage - Example
     
 </footer>

@@ -1,10 +1,10 @@
 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
-<!-- Build your Header (Menu-Bar) here!  -->
+<!-- Build your header (menu bar) here!  -->
 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
 
 <header>
     
-    <!-- [Example Menu-Bar] -->
+    <!-- [Example menu bar] -->
     <a href ="startpage">Home</a> -
     <a href ="markdown-example">Markdown Example</a> -
     <a href ="html-example">HTML Example</a> - 

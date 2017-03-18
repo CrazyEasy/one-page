@@ -4,13 +4,15 @@
 
 <?php
 
-# Eigentliche Domain: (Kein "/" ans Ende!)
+# Main Domain (No "/" at the End!)
 $main_domain = "http://localhost"; 
-
-# Experimenteller Pfad: (Achte auf Groß-/Kleinschreibung!)
-$experimental_path = "/GitHub/one-page";
 
 # <title>-Name
 $page_name = "OnePage";
+
+# Experimental Path: (case-sensitive!)
+$experimental_path = "/GitHub/one-page"; # [Leave blank, if you are using the main directory!]
+# Example:
+# $experimental_path = "/one-page"; [Starting with a "/"!]
 
 ?>

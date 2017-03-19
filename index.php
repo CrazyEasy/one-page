@@ -85,8 +85,20 @@
             
             # Markdown?
             if (file_exists("pages/startpage.md")) {
+                $path = "pages/startpage.md";
                 echo "<main>";
-                include 'pages/startpage.md';
+                
+                # Parse MarkDown using Parsedown + Parsedown Extra (Parsedown.org)
+                if ($markdown_extra) {
+                    $Extra = new ParsedownExtra();
+                    echo $Extra->text(file_get_contents($path));
+                }
+                
+                else {
+                    $Parsedown = new Parsedown();
+                    echo $Parsedown->text(file_get_contents($path));
+                }
+                
                 echo "</main>";
             }
             
@@ -114,9 +126,16 @@
                 echo "<main>";
                 
                 # Parse MarkDown using Parsedown + Parsedown Extra (Parsedown.org)
-                $Extra = new ParsedownExtra();
-                echo $Extra->text(file_get_contents($path));
+                if ($markdown_extra) {
+                    $Extra = new ParsedownExtra();
+                    echo $Extra->text(file_get_contents($path));
+                }
                 
+                else {
+                    $Parsedown = new Parsedown();
+                    echo $Parsedown->text(file_get_contents($path));
+                }
+                    
                 echo "</main>";
             }
             

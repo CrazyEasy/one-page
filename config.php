@@ -4,6 +4,7 @@
 
 <?php
 
+
 # Main domain (No "/" at the End!)
 $main_domain = "http://example.com"; 
 
@@ -14,5 +15,8 @@ $page_name = "MyWebsite";
 $experimental_path = ""; # [Leave blank, if you are using the main directory!]
 # Example:
 # $experimental_path = "/one-page"; [starting with a "/"!]
+
+# Enable Markdown Extra support using Parsedown Extra? (https://michelf.ca/projects/php-markdown/extra/)
+$markdown_extra = false;
 
 ?>

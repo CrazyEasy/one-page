@@ -15,4 +15,7 @@ $experimental_path = "/GitHub/one-page"; # [Leave blank, if you are using the ma
 # Example:
 # $experimental_path = "/one-page"; [starting with a "/"!]
 
+# Enable Markdown Extra support using Parsedown Extra? (https://michelf.ca/projects/php-markdown/extra/)
+$markdown_extra = false;
+
 ?>

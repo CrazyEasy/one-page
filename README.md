@@ -17,6 +17,7 @@ Open `config.php`:
 - **`$main_domain`**: Just set it onto your domain/url!
 - **`$page_name`**: Enter the name of your page (One-Page will use it to generate the website-title!)
 - **`$experimental_path`**: If you are not using the main directory, add your sub-directory here. [Beta]
+- **`$markdown_extra`**: Enable Markdown Extra.
 
 Example ``config.php``:
 
@@ -29,6 +30,9 @@ $page_name = "MyPage";
 
 # Experimental Path: (case-sensitive!)
 $experimental_path = "/sub-directory";
+
+# Enable Markdown Extra?
+$markdown_extra = false;
 ```
 
 

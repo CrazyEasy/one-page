@@ -13,8 +13,12 @@
     if ($main_domain{strlen($main_domain) - 1} == "/") {
         $main_domain = substr($main_domain, 0, -1);      
     }
-    if ($experimental_path{strlen($experimental_path) - 1} == "/") {
-        $experimental_path = substr($experimental_path, 0, -1);      
+    
+    if ($experimental_path != null) {
+        
+        if ($experimental_path{strlen($experimental_path) - 1} == "/") {
+            $experimental_path = substr($experimental_path, 0, -1);      
+        }   
     }
     
     # Deactivate Errors

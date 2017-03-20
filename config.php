@@ -6,7 +6,7 @@
 
 
 # Main domain (No "/" at the End!)
-$main_domain = "http://example.com"; 
+$main_domain = "http://localhost"; 
 
 # <title>-name
 $page_name = "MyWebsite";

@@ -1,5 +1,6 @@
 # ONE-PAGE
 [![Build Status](https://travis-ci.org/CrazyEasy/One-Page.svg?branch=master)](https://travis-ci.org/CrazyEasy/One-Page)
+
 Building a website? Annoyed about changing the menu bar on every single page separately? Just because of one tiny typo? **One-Page** will help you out and you simply have to focus on the content!
 
 ![](/img/tutorial1.png)

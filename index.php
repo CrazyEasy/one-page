@@ -12,7 +12,7 @@
     # Removes "/" at the End
     if ($main_domain{strlen($main_domain) - 1} == "/") {
         $main_domain = substr($main_domain, 0, -1);      
-    }
+ #   }
     
     if ($experimental_path != null) {
         

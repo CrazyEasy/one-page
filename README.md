@@ -1,6 +1,6 @@
 # ONE-PAGE
 [![Build Status](https://travis-ci.org/CrazyEasy/One-Page.svg?branch=master)](https://travis-ci.org/CrazyEasy/One-Page)
-[![Licence Open Culture](https://img.shields.io/badge/licence-Free%20Cultural-blue.svg)](https://github.com/CrazyEasy/One-Page/blob/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/CrazyEasy/One-Page/master/LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/CrazyEasy/One-Page.svg)](https://github.com/CrazyEasy/One-Page/issues)
 [![GitHub release](https://img.shields.io/github/release/crazyeasy/one-page.svg)](https://github.com/CrazyEasy/One-Page/releases)
 

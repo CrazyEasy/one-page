@@ -1,3 +1,5 @@
+<!-- (C) CrazyEasy 2017 - MIT Licence - See LICENCE.md for more information! -->
+
 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
 <!-- You don't need to change anything here! -->
 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->

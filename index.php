@@ -4,8 +4,8 @@
 
 <!DOCTYPE html>
 <html>
-    
-    <?php
+
+<?php
     # Include Config
     include 'config.php';
     
@@ -57,7 +57,7 @@
     # define $page (ucfirst)
     $page = ucfirst($url);
     ?>
-    
+
     <head>
         <?php
         # include head
@@ -76,16 +76,20 @@
         }
         ?>
     </head>
-    
+
     <body>
-            <?php
+        <?php
             # include header
             include 'header.php';    
             ?>
-        
-        <?php
+
+            <?php
         # start page?
         if ($url == null) {
+            
+            #             |
+            # START PAGES |
+            #             V
             
             # Markdown?
             if (file_exists("pages/startpage.md")) {
@@ -122,10 +126,84 @@
             
         }
         
-        else {
+        else { # other page (not startpage)
+            
+            #              |
+            # ADD-ON INDEX |
+            #              V
+            
+            # AddOn Markdown index?
+            if (file_exists("add-ons/$url/index.md")) {
+                $path = "add-ons/$url/index.md";
+                echo "<main>";
+                
+                # Parse MarkDown using Parsedown + Parsedown Extra (Parsedown.org)
+                if ($markdown_extra) {
+                    $Extra = new ParsedownExtra();
+                    echo $Extra->text(file_get_contents($path));
+                }
+                
+                else {
+                    $Parsedown = new Parsedown();
+                    echo $Parsedown->text(file_get_contents($path));
+                }
+                    
+                echo "</main>";
+            }
+            
+            # AddOn PHP index?
+            elseif (file_exists("add-ons/$url/index.php")) { 
+                $path = "add-ons/$url/index.php";
+                include $path;
+            }
+            
+            # AddOn HTML index?
+            elseif (file_exists("add-ons/$url/index.html")) { 
+                $path = "add-ons/$url/index.html";
+                include $path;
+            }
+            
+            #              |
+            # ADD-ON PAGES |
+            #              V
+            
+            # AddOn Markdown page?
+            elseif (file_exists("add-ons/$url.md")) {
+                $path = "add-ons/$url.md";
+                echo "<main>";
+                
+                # Parse MarkDown using Parsedown + Parsedown Extra (Parsedown.org)
+                if ($markdown_extra) {
+                    $Extra = new ParsedownExtra();
+                    echo $Extra->text(file_get_contents($path));
+                }
+                
+                else {
+                    $Parsedown = new Parsedown();
+                    echo $Parsedown->text(file_get_contents($path));
+                }
+                    
+                echo "</main>";
+            }
+            
+            # AddOn PHP page?
+            elseif (file_exists("add-ons/$url.php")) { 
+                $path = "add-ons/$url.php";
+                include $path;
+            }
+            
+            # AddOn HTML page?
+            elseif (file_exists("add-ons/$url.html")) { 
+                $path = "add-ons/$url.html";
+                include $path;
+            }
+            
+            #              |
+            # NORMAL PAGES |
+            #              V
             
             # Markdown?
-            if (file_exists("pages/$url.md")) {
+            elseif (file_exists("pages/$url.md")) {
                 $path = "pages/$url.md";
                 echo "<main>";
                 
@@ -162,12 +240,12 @@
             
         }
         ?>
-        
-            <?php
+
+                <?php
             # include footer
             include 'footer.php';    
             ?>
-        
+
     </body>
-    
+
 </html>

@@ -1,7 +1,7 @@
 # ONE-PAGE
 [![Build Status](https://travis-ci.org/CrazyEasy/One-Page.svg?branch=master)](https://travis-ci.org/CrazyEasy/One-Page)
 [![GitHub issues](https://img.shields.io/github/issues/CrazyEasy/One-Page.svg)](https://github.com/CrazyEasy/One-Page/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/CrazyEasy/One-Page/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/CrazyEasy/One-Page/blob/master/LICENSE.md)
 [![GitHub release](https://img.shields.io/github/release/crazyeasy/one-page.svg)](https://github.com/CrazyEasy/One-Page/releases)
 
 Building a website? Annoyed about changing the menu bar on every single page separately? Just because of one tiny typo? **One-Page** will help you out and you simply have to focus on the content!

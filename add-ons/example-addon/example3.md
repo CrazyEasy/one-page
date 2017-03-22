@@ -1,2 +1,0 @@
-# AddOn-Example-Page
-MarkDown
